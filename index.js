@@ -68,6 +68,7 @@ module.exports = function electronLess({
     return less.render(pre+css,
     {
         paths: paths
+        filename: `${id}.css`
     })
     .then(output=>{
         appendStyles(output.css, id);
