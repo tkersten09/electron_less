@@ -9,6 +9,7 @@ function appendStyles(css, id=null){
 
     if(id){
         style.setAttribute('id', id);
+        style.setAttribute('href', `${id}.css`);
     }
 
     style.type = 'text/css';
